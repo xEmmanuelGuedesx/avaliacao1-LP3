@@ -51,7 +51,7 @@ appControllers.controller('AddimcCtrl',['$scope','$routeParams',function($scope,
 	
 	$scope.alturacli = $routeParams.alturac;
 	$scope.pesocli = $routeParams.pesoc;
-	$scope.mediaimc = +$scope.pesocli / (+$scope.alturacli * +$scope.alturacli);
+	$scope.mediaimc = $routeParams.pesoc / ($routeParams.alturac * $routeParams.alturac);
 	console.log('Cheguei até aqui!');
 	
 }]);

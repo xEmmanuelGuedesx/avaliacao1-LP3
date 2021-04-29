@@ -9,6 +9,8 @@
 
 <script src="app.js"> </script>
 <script src="controllers.js"></script>
+<script src="js/angular.js"></script>
+<script src="cordova.js"></script>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -31,7 +33,7 @@
 		var peso1 = document.getElementById("ps").value;
 		window.localStorage.setItem("Pso",peso1);
 
-		var imc1 = document.getElementById("mediaimc");
+		var imc1 = peso1/(altura1**2);
 		window.localStorage.setItem("MediaIMC",imc1);
 
 		}
