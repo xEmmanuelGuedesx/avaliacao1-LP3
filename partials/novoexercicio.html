@@ -1,0 +1,36 @@
+
+<div class="container text-center">
+<h2>Cadastrar Exercicio</h2>
+
+<form  ng-submit="enviar()" ng-controller="exercicioCtrl">
+
+	
+	<div>
+		<label> Tipo do Exercicio: </label>
+		<input type="text" id="te" value="" ng-model="tipexerc">
+	</div>
+	
+	<div>
+		<label> Quantidade Percorrida: </label>
+		<input type="text" id="qp" ng-model="quantperco">
+	</div>
+
+	<div>
+		<label> Tempo Gasto: </label>
+		<input type="number" id="tg" ng-model="tempgast">
+	</div>
+	
+	
+	<div>
+		<label> Calorias Perdidas: </label>
+		<input type="number" id="cp" ng-model="caloperdi">
+	</div>
+	
+	
+
+	<div>
+		<button class="btn btn-outline-dark" type="submit" onclick="gravar2()"> Salvar </button>
+	</div>
+	
+</form>
+</div>

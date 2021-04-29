@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+	<title>Avaliação 1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-cookies.js"></script>
+
+<script src="app.js"> </script>
+<script src="controllers.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<script>
+			
+	function gravar(){
+		var altura1 = document.getElementById("alt").value;
+		window.localStorage.setItem("Altura",altura1);
+	
+		var peso1 = document.getElementById("ps").value;
+		window.localStorage.setItem("Pso",peso1);
+
+		var imc1 = document.getElementById("mediaimc");
+		window.localStorage.setItem("MediaIMC",imc1);
+
+		}
+		
+	</script>
+		
+	<script>
+		function gravar2(){
+		var tipoexe = document.getElementById("te").value;
+		window.localStorage.setItem("TipoExercicio",tipoexe);
+	
+		var quantidadep = document.getElementById("qp").value;
+		window.localStorage.setItem("QuantidadePercorrida",quantidadep);
+
+		var tempog = document.getElementById("tg").value;
+		window.localStorage.setItem("TempoGasto",tempog);
+
+		var calorp = document.getElementById("cp").value;
+		window.localStorage.setItem("CalorriasPerdidas",calorp);
+		}
+</script>
+
+<script>
+		function gravar3(){
+		var nomecli = document.getElementById("nc").value;
+		window.localStorage.setItem("NomeCliente",nomecli);
+	
+		var cpfcli = document.getElementById("cpfc").value;
+		window.localStorage.setItem("CPFCLiente",cpfcli);
+
+		var telefonecli = document.getElementById("tc").value;
+		window.localStorage.setItem("TelefoneCliente",telefonecli);
+
+		var emailcli = document.getElementById("ec").value;
+		window.localStorage.setItem("EmailCliente",emailcli);
+
+		var idadecli = document.getElementById("ic").value;
+		window.localStorage.setItem("IdadeCliente",idadecli);
+
+		}
+
+</script>
+
+	
+
+<style>
+	
+	input {
+		padding: 5px;
+		border: 1px solid #ccc;
+		background-color: #fafad2;
+		color: #000;
+	}
+	
+	div {
+		padding: 5px;
+	}
+	
+	a{ 
+		padding: 10px;
+		float: left;
+	
+	}
+	
+	body{
+
+		height: auto;
+
+	}
+
+</style>
+
+</head>
+
+<body">
+
+	<header class="bg-primary">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Linguagem P. III</h1>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col text-center">
+                    <h2> Avaliação 1 </h2>
+					<h2>Professor: Marcelo Silva</h2>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col text-center">
+                    <h3>Aluno: Emmanuel H.F. Guedes </h3>
+						
+				</div>
+            </div>
+        </div>
+    </header>
+
+
+<div ng-view>  
+
+	
+	
+</div>
+
+<footer class="bg-primary">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col text-center font-weight-bold">
+				<p>&copy Emmanuel Guedes - 2021</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

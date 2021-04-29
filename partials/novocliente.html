@@ -1,0 +1,38 @@
+<div class="container text-center" >
+<h2>Cadastrar Cliente</h2>
+
+<form ng-submit="enviar()" ng-controller="clienteCtrl">
+
+	<div>
+		<label> Nome cliente: </label>
+		<input type="text" id="nc" ng-model="ncliente">
+	</div>
+	
+	<div>
+		<label> CPF: </label>
+		<input type="text" id="cpfc" ng-model="cpfcliente">
+	</div>
+
+	<div>
+		<label> Telefone: </label>
+		<input type="tel" id="tc" ng-model="telefcliente">
+	</div>
+	
+	
+	<div>
+		<label> E-mail: </label>
+		<input type="email" id="ec" ng-model="emailcliente">
+	</div>
+	
+	
+	<div>
+		<label> Idade: </label>
+		<input type="number" id="ic" ng-model="idadecliente">
+	</div>
+
+	<div>
+		<button class="btn btn-outline-dark" type="submit" onclick="gravar3()"> Salvar </button>
+	</div>
+	
+</form>
+</div>
