@@ -55,3 +55,21 @@ appControllers.controller('AddimcCtrl',['$scope','$routeParams',function($scope,
 	console.log('Cheguei até aqui!');
 	
 }]);
+
+appControllers.controller('apagar-consultar-clienteCtrl',['$scope','$location',function($location){
+    
+	$location.path('/apagar-consultar-cliente');
+	
+}]);
+
+appControllers.controller('apagar-consultar-exercicioCtrl',['$scope','$location',function($location){
+    
+	$location.path('/apagar-consultar-exercicio');
+	
+}]);
+
+appControllers.controller('apagar-consultar-imcCtrl',['$scope','$location',function($location){
+    
+	$location.path('/apagar-consultar-imc');
+	
+}]);

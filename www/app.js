@@ -19,7 +19,11 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
 	when('/novoimc',{templateUrl:'partials/novoimc.html',controller:'imcCtrl'}).
 	when('/addimc/:alturac/:pesoc',{templateUrl:'partials/addimc.html',controller:'AddimcCtrl'});
 	
-
+	$routeProvider.when('/apagar-consultar-cliente',{templateUrl: 'partials/apagar-consultar-cliente.html',controller: 'apagar-consultar-clienteCtrl'});
+	
+	$routeProvider.when('/apagar-consultar-exercicio',{templateUrl: 'partials/apagar-consultar-exercicio.html',controller: 'apagar-consultar-exercicioCtrl'});
+	
+	$routeProvider.when('/apagar-consultar-imc',{templateUrl: 'partials/apagar-consultar-imc.html',controller: 'apagar-consultar-imcCtrl'});
 	
 	$locationProvider.html5Mode(false).hashPrefix('!');
 	

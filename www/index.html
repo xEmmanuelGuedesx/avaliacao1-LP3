@@ -75,9 +75,103 @@
 		}
 
 </script>
+<script>
+        	   
+	function recuperar(){
+	 var cli = window.localStorage.getItem("NomeCliente");
+	 document.getElementById("getnome").innerHTML = ""+cli;
+	 
+	 var cpf = window.localStorage.getItem("CPFCLiente");
+	 document.getElementById("getcpf").innerHTML = ""+cpf;
 
+	 var telef = window.localStorage.getItem("TelefoneCliente");
+	 document.getElementById("gettelef").innerHTML = ""+telef;
+	 
+
+	 var email = window.localStorage.getItem("EmailCliente");
+	 document.getElementById("getemail").innerHTML = ""+email;
+
+	 var idade = window.localStorage.getItem("IdadeCliente");
+	 document.getElementById("getidade").innerHTML = ""+idade;
+ 
+ }
+
+</script>
+
+<script>
+        	   
+	function recuperar2(){
+	 var tipoe = window.localStorage.getItem("TipoExercicio");
+	 document.getElementById("gette").innerHTML = ""+tipoe;
+	 
+	 var quantp = window.localStorage.getItem("QuantidadePercorrida");
+	 document.getElementById("getqp").innerHTML = ""+quantp;
+
+	 var tempg = window.localStorage.getItem("TempoGasto");
+	 document.getElementById("gettg").innerHTML = ""+tempg;
+	 
+
+	 var calop = window.localStorage.getItem("CalorriasPerdidas");
+	 document.getElementById("getcp").innerHTML = ""+calop;
+
+	 
+ }
+
+</script>
+
+<script>
+        	   
+	function recuperar3(){
+	 var alt = window.localStorage.getItem("Altura");
+	 document.getElementById("getaltura").innerHTML = ""+alt;
+	 
+	 var ps = window.localStorage.getItem("Pso");
+	 document.getElementById("getpeso").innerHTML = ""+ps;
+
+	 var mimc = window.localStorage.getItem("MediaIMC");
+	 document.getElementById("getimc").innerHTML = ""+mimc;
+	 
+ 
+ }
+
+</script>
+
+
+<script> 
+function apagar(){
+
+	localStorage.removeItem('NomeCliente');
+	localStorage.removeItem('CPFCLiente');
+	localStorage.removeItem('TelefoneCliente');
+	localStorage.removeItem('EmailCliente');
+	localStorage.removeItem('IdadeCliente');
+
+ }
+ </script>
 	
+	<script> 
+		function apagar2(){
+		
+			localStorage.removeItem('TipoExercicio');
+			localStorage.removeItem('QuantidadePercorrida');
+			localStorage.removeItem('TempoGasto');
+			localStorage.removeItem('CalorriasPerdidas');
+			
+		
+		 }
+		 </script>
 
+<script> 
+	function apagar3(){
+	
+		localStorage.removeItem('Altura');
+		localStorage.removeItem('Pso');
+		localStorage.removeItem('MediaIMC');
+		
+	
+	 }
+	 </script>
+	
 <style>
 	
 	header,footer{ 
